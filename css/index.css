@@ -107,3 +107,112 @@
 .copyright_text {
   font-size: 1.4rem;
 }
+
+/* ┌─────────────────────────────────────────┐
+   │ レスポンシブ                        │
+   └─────────────────────────────────────────┘ */
+
+@media screen and (max-width: 767px) {
+  .hero {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  .hero_img {
+    display: block;
+
+    height: 33.4rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0rem;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ header                        │
+   └─────────────────────────────────────────┘ */
+  .menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2.7rem;
+
+    padding: 0 1.8rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo1 {
+    display: block;
+    width: 11rem;
+    height: auto;
+  }
+
+  .nav_list {
+    display: flex;
+    gap: 3.3rem;
+    font-size: 1.4rem;
+  }
+
+  .nav_link {
+    font-size: 1.4rem;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ about                        │
+   └─────────────────────────────────────────┘ */
+
+  /* flexの親。50%の子が4つ → flex-wrapで自動的に2行×2列になる */
+  .about_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* テキストを画像の縦中央にそろえる */
+    row-gap: 6rem; /* 1行目と2行目の縦の隙間 */
+    width: 100%;
+    margin: 5rem auto 0;
+  }
+
+  /* 画像（48rem四方） */
+  .about_img_content {
+    width: 100%;
+    height: 33.9rem;
+  }
+
+  /* テキスト（HTMLの順番だけで1行目は右・2行目は左に置かれる） */
+  .about_msg_content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about_content .about_img_content:nth-child(1) {
+    order: 1;
+  } /* 画像 */
+  .about_content .about_msg_content:nth-child(2) {
+    order: 2;
+  } /* 文字 */
+  .about_content .about_img_content:nth-child(4) {
+    order: 3;
+  } /* 2行目の画像を前へ */
+  .about_content .about_msg_content:nth-child(3) {
+    order: 4;
+  } /* 2行目の文字を後ろへ */
+
+  .about_title {
+    font-size: 2.4rem;
+    font-weight: 400; /* h2デフォルトの太字(700)を解除 */
+    padding-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .about_desc {
+    font-size: 1.2rem;
+    padding-bottom: 2.5rem;
+    color: var(--text);
+  }
+
+  .about_desc2 {
+    width: 28rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--text);
+  }
+}
