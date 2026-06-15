@@ -3,17 +3,8 @@
 
    └─────────────────────────────────────────┘ */
 
-.test {
-  width: 10rem;
-  background-color: red;
-  border: 0.5rem solid red;
-  /* ★テスト */
-  font-size: 3rem;
-  padding: 6rem 7rem 0;
-}
-
 .hero {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .hero_img {
@@ -24,7 +15,27 @@
   margin: 0 auto;
   margin-top: 6rem;
 }
+/* ┌─────────────────────────────────────────┐
+   │ header                        │
+   └─────────────────────────────────────────┘ */
+.menu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5rem;
 
+  width: 126rem;
+  margin: 0 auto;
+}
+.logo1 {
+  width: 12rem;
+  height: 1rem;
+}
+
+.nav_list {
+  display: flex;
+  gap: 5rem;
+}
 /* ★ アートボート（デザインカンプ）がの横幅が1400ならば、style.cssの計算式
 も1400にしないといけない。そうしない、デザインカンプ通りにデザインすることができない */
 
@@ -50,8 +61,8 @@
 
 /* テキスト（HTMLの順番だけで1行目は右・2行目は左に置かれる） */
 .about_msg_content {
-  width: 50%;
-  padding-left: 6.7rem;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .about_title {
@@ -72,4 +83,27 @@
   font-size: 1.4rem;
   line-height: 1.8;
   color: var(--text);
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ フッター                        │
+   └─────────────────────────────────────────┘ */
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 96rem;
+  margin: 5rem auto 2rem;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 12rem;
+  height: 1rem;
+}
+
+.copyright_text {
+  font-size: 1.4rem;
 }
