@@ -113,6 +113,10 @@
    └─────────────────────────────────────────┘ */
 
 @media screen and (max-width: 767px) {
+  /* ┌─────────────────────────────────────────┐
+     │ メインビジュアル     モバイル                   │
+     └─────────────────────────────────────────┘ */
+
   .hero {
     margin-bottom: 5rem;
     width: 100%;
@@ -128,15 +132,14 @@
   }
 
   /* ┌─────────────────────────────────────────┐
-   │ header                        │
+   │ header     モバイル　   　　　　　　            │
    └─────────────────────────────────────────┘ */
   .menu {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    gap: 2.7rem;
+    gap: 2.7em;
 
-    padding: 0 1.8rem;
     width: 100%;
     margin: 0 auto;
   }
@@ -145,20 +148,36 @@
     display: block;
     width: 11rem;
     height: auto;
+    /* border: 0.1rem solid red; */
   }
 
   .nav_list {
     display: flex;
     gap: 3.3rem;
     font-size: 1.4rem;
+    width: auto;
+    margin-right: 1rem;
+    /* border: 0.1rem solid blue; */
   }
 
   .nav_link {
     font-size: 1.4rem;
   }
 
+  /* .nav_item:nth-child(1) {
+    width: 5.2rem;
+  }
+
+  .nav_item:nth-child(2) {
+    width: 3.2rem;
+  }
+
+  .nav_item:nth-child(3) {
+    width: 4.8rem;
+  } */
+
   /* ┌─────────────────────────────────────────┐
-   │ about                        │
+   │ about       モバイル　　　　　　          │
    └─────────────────────────────────────────┘ */
 
   /* flexの親。50%の子が4つ → flex-wrapで自動的に2行×2列になる */
