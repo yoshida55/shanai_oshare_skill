@@ -134,19 +134,23 @@
   /* ┌─────────────────────────────────────────┐
    │ header     モバイル　   　　　　　　            │
    └─────────────────────────────────────────┘ */
+  /*メニューのwidthとデザインカンプのwidthがずれているので、サイズを完全に合わせるのは難しいと考えます。gapがって、全体よりであればおけーです。*/
+
   .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-left: 1.8rem; */
     gap: 2.7em;
 
     width: 100%;
+    padding: 0 0rem;
     margin: 0 auto;
   }
 
   .logo1 {
     display: block;
-    width: 11rem;
+    width: 10rem;
     height: auto;
     /* border: 0.1rem solid red; */
   }
@@ -156,7 +160,7 @@
     gap: 3.3rem;
     font-size: 1.4rem;
     width: auto;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     /* border: 0.1rem solid blue; */
   }
 
